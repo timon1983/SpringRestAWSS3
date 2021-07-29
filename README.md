@@ -24,4 +24,4 @@ USER - read only all data except User({"email":"user@yandex.ru","password":"user
 
 4.Using the Dockerfile create the Docker image. From the directory of Dockerfile: docker build . -t spring_rest_project_app
 
-5.Run the Docker image spring_rest_project_app and connect with mysql-docker: docker run -p8086:8086 --name spring_rest_project_app --link mysql-docker:mysql -d spring_rest_project_app
+5.Run the Docker image  spring_boot_rest_awss3_app and connect with mysql-docker: docker run -p8086:8086 --name spring_rest_project_app --link mysql-docker:mysql -d  spring_boot_rest_awss3_app
