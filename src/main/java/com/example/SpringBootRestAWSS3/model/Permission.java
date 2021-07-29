@@ -2,13 +2,6 @@ package com.example.SpringBootRestAWSS3.model;
 
 public enum Permission {
 
-//    USERS_READ("users:read"),
-//    USERS_WRITE("users:write"),
-//    EVENTS_READ("events:read"),
-//    EVENTS_WRITE("events:write"),
-//    FILE_READ("file:read"),
-//    FILE_WRITE("file:write");
-
     USER_READ("user:read"),
     MODER_READ("moder:read"),
     ADMIN_READ("admin:read"),
