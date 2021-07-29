@@ -20,7 +20,7 @@ USER - read only all data except User({"email":"user@yandex.ru","password":"user
 
 2.In the Spring Boot Application, use the same container name of the mysql instance in the application.properties: spring.datasource.url=jdbc:mysql://mysql-docker:3306/mysqldocker
 
-3.Create a Dockerfile for creating a docker image from the Spring Boot Application: FROM openjdk:11 ADD /build/libs/SpringRestProject-0.0.1-SNAPSHOT.jar SpringRestProject-0.0.1-SNAPSHOT.jar EXPOSE 8086 ENTRYPOINT ["java","-jar","SpringRestProject-0.0.1-SNAPSHOT.jar"]
+3.Create a Dockerfile for creating a docker image from the Spring Boot Application: FROM openjdk:11 ADD /build/libs/SpringBootRestAWSS3-0.0.1-SNAPSHOT.jar SpringBootRestAWSS3-0.0.1-SNAPSHOT.jar EXPOSE 8086 ENTRYPOINT ["java","-jar","SpringBootRestAWSS3-0.0.1-SNAPSHOT.jar"]
 
 4.Using the Dockerfile create the Docker image. From the directory of Dockerfile: docker build . -t spring_rest_project_app
 
