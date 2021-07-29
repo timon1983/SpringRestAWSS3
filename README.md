@@ -4,10 +4,14 @@
  Interaction with S3 is implemented using the AWS SDK.
  The download history is stored in MYSQL.
  
- A JWT token is used to access the work.(Spring Security)/n
+ A JWT token is used to access the work.(Spring Security)
+ 
  Access levels:
+
 ADMIN - full access to the application({"email":"admin@gmail.com","password":"admin"})
+
 MODERATOR - adding and deleting files({"email":"moder@mail.ru","password":"moder"})
+
 USER - read only all data except User({"email":"user@yandex.ru","password":"user"})
 
  Spring Boot on Docker connecting to MySQL Docker container
