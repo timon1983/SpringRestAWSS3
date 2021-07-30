@@ -24,7 +24,7 @@ public class S3Controller {
         return s3Service.uploadFile(file);
     }
 
-    @DeleteMapping("/deleteFile")
+    @DeleteMapping("deleteFile")
     @PreAuthorize("hasAuthority('file:delete')")
     public String deleteFile(@RequestPart("url") String fileUrl) {
 
