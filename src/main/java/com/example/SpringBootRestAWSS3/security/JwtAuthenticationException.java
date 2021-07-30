@@ -2,7 +2,6 @@ package com.example.SpringBootRestAWSS3.security;
 
 import lombok.Getter;
 import org.springframework.http.HttpStatus;
-
 import javax.naming.AuthenticationException;
 
 @Getter
