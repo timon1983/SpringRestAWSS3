@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/github/timon1983/SpringRestAWSS3.png)](https://travis-ci.com/github/timon1983/SpringRestAWSS3)
+[![Build Status](https://travis-ci.com/timon1983/SpringRestAWSS3.png)](https://travis-ci.com/timon1983/SpringRestAWSS3)
 
 SpringRestAWSS3
  
