@@ -1,4 +1,6 @@
- SpringRestAWSS3
+[![Build Status](https://travis-ci.com/github/timon1983/SpringRestAWSS3.png)](https://travis-ci.com/github/timon1983/SpringRestAWSS3)
+
+SpringRestAWSS3
  
  The REST API interacts with the AWS S3 file storage and provides the ability to access files and download history.
  Interaction with S3 is implemented using the AWS SDK.
