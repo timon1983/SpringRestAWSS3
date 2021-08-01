@@ -30,16 +30,7 @@ public class EventService {
 
     //Create new event on DB
     public Event save(String fileName){
-        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
-        String userName = auth.getName();
-        Optional<User> user = userAuthRepository.findByEmail(userName);
-        User newUser = user.get();
-        File file = new File();
-        Event event = new Event();
-        file.setFileName(fileName);
-        event.setUser(newUser);
-        event.setFile(file);
-        return eventRepository.save(event);
+        return eventRepository.save(createEvent(fileName));
     }
 
     //Get all the events of a specific user
@@ -49,5 +40,19 @@ public class EventService {
                 events.stream().filter(x->(x.getUser().getId() == userId)).collect(Collectors.toList());
 
         return eventsByUser;
+    }
+
+    //Create Event by fileName
+    public Event createEvent(String fileName){
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        String userEmail = auth.getName();
+        Optional<User> user = userAuthRepository.findByEmail(userEmail);
+        User newUser = user.get();
+        File file = new File();
+        Event event = new Event();
+        file.setFileName(fileName);
+        event.setUser(newUser);
+        event.setFile(file);
+        return event;
     }
 }
